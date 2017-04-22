@@ -1,5 +1,6 @@
 export default function(){
-	return [{
+	return [
+	{
 	    "login": "mojombo",
 	    "id": 1,
 	    "avatar_url": "https://avatars3.githubusercontent.com/u/1?v=3",
@@ -16,7 +17,11 @@ export default function(){
 	    "events_url": "https://api.github.com/users/mojombo/events{/privacy}",
 	    "received_events_url": "https://api.github.com/users/mojombo/received_events",
 	    "type": "User",
-	    "site_admin": false
+	    "site_admin": false,
+	    "user_name": "Tom Preston-Werner",
+	    "user_location": "San Francisco",
+	    "user_mail_at": "tom@mojombo.com",
+	    "user_website_url": "http://tom.preston-werner.com"
 	}, {
 	    "login": "defunkt",
 	    "id": 2,
@@ -34,7 +39,11 @@ export default function(){
 	    "events_url": "https://api.github.com/users/defunkt/events{/privacy}",
 	    "received_events_url": "https://api.github.com/users/defunkt/received_events",
 	    "type": "User",
-	    "site_admin": true
+	    "site_admin": true,
+	    "user_name": "Chris Wanstrath",
+	    "user_location": "San Francisco",
+	    "user_mail_at": "chris@github.com",
+	    "user_website_url": "http://chriswanstrath.com/"
 	}, {
 	    "login": "pjhyett",
 	    "id": 3,
@@ -52,7 +61,11 @@ export default function(){
 	    "events_url": "https://api.github.com/users/pjhyett/events{/privacy}",
 	    "received_events_url": "https://api.github.com/users/pjhyett/received_events",
 	    "type": "User",
-	    "site_admin": false
+	    "site_admin": false,
+	    "user_name": "PJ Hyett",
+	    "user_location": "San Francisco",
+	    "user_mail_at": "pj@hyett.com",
+	    "user_website_url": "https://hyett.com"
 	}, {
 	    "login": "wycats",
 	    "id": 4,
@@ -70,7 +83,11 @@ export default function(){
 	    "events_url": "https://api.github.com/users/wycats/events{/privacy}",
 	    "received_events_url": "https://api.github.com/users/wycats/received_events",
 	    "type": "User",
-	    "site_admin": false
+	    "site_admin": false,
+	    "user_name": "Yehuda Katz",
+	    "user_location": "San Francisco",
+	    "user_mail_at": "wycats@gmail.com",
+	    "user_website_url": "http://yehudakatz.com"
 	}, {
 	    "login": "ezmobius",
 	    "id": 5,
@@ -88,7 +105,11 @@ export default function(){
 	    "events_url": "https://api.github.com/users/ezmobius/events{/privacy}",
 	    "received_events_url": "https://api.github.com/users/ezmobius/received_events",
 	    "type": "User",
-	    "site_admin": false
+	    "site_admin": false,
+	    "user_name": "Ezra Zygmuntowicz",
+	    "user_location": "In the NW",
+	    "user_mail_at": "",
+	    "user_website_url": "http://stuffstr.com"
 	}, {
 	    "login": "ivey",
 	    "id": 6,

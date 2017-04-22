@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { selectUser } from '../actions/index';
+import { bindActionCreators } from 'redux';
 
 class UserList extends Component{
 	renderUserList(){
 		return this.props.users.map((user)=>{
 			return(
-				<li className="list-group-item" key={user.id}>
+				<li 
+					onClick={()=> this.props.selectUser(user)}
+					className="list-group-item" 
+					key={user.id}>
 					<img src={user.avatar_url} alt={user.login}/>
 					<span>
 						{user.login}
@@ -30,4 +35,10 @@ function mapStateToProps(state){ // our `state` contains list of user and active
 	};
 }
 
-export default connect(mapStateToProps)(UserList);
+function mapDispatchToProps(dispatch){
+	return bindActionCreators({
+		selectUser: selectUser
+	}, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(UserList);
