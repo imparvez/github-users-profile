@@ -24,7 +24,7 @@ class UserList extends Component{
 	}
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state){ // our `state` contains list of user and activeUser
 	return {
 		users: state.users
 	};
